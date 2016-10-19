@@ -31,4 +31,5 @@ $ docker run -it -p 8888:8888 -p 6006:6006 \
 Credits
 -------
 [erroneousboat] (https://github.com/erroneousboat/tensorflow-python3-jupyter)
+
 [yamatsuka-hiroto] (https://github.com/yamatsuka-hiroto/tensorflow-python3-jupyter)
