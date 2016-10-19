@@ -1,7 +1,7 @@
 Tensorflow Python3 Jupyter _et al._
 ================================
 
-Docker container with Python 3(.4) version of Tensorflow accompanied by Jupyter and a number of useful packages. TensorFlow version is currently r0.11.
+Docker container with Python (3.5) version of Tensorflow accompanied by Jupyter and a number of useful packages. TensorFlow version is currently 0.11.0rc0.
 
 Included packages (excluding dependencies):
 * ipykernel
@@ -19,13 +19,19 @@ Included packages (excluding dependencies):
 
 Also includes support for exporting Jupyter notebooks as PDFs (via nbconvert).
 
+Included packages via apt-get:
+* texlive
+* texlive-latex-extra
+* pandoc
+* xzdec
+
 Usage
 -----
 
 ```bash
 $ docker run -it -p 8888:8888 -p 6006:6006 \
     -v [path-to-notebooks]:/notebooks \
-    --name ct_tf_py34 ConsiliumTechnology/TensorFlow_py3.4
+    --name ct_tf_py35 ozdeadman/ct_tf_py35
 ```
 
 Credits
