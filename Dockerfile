@@ -30,6 +30,8 @@ RUN pip --no-cache-dir install \
 	jupyter \
 	matplotlib \
 	keras \
+	statsmodels \
+	bs4 \
 	&& \
 	python -m ipykernel.kernelspec
 
