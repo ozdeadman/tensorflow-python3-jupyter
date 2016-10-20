@@ -13,6 +13,7 @@ Included packages (excluding dependencies):
 * keras
 * Pillow
 * statsmodels
+* bs4
 * openpyxl
 * pytest
 * typing
