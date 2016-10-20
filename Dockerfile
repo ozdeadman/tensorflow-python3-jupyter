@@ -32,6 +32,9 @@ RUN pip --no-cache-dir install \
 	keras \
 	statsmodels \
 	bs4 \
+	openpyxl \
+	pytest \
+	typing \
 	&& \
 	python -m ipykernel.kernelspec
 
