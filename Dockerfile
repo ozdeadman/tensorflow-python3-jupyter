@@ -35,6 +35,7 @@ RUN pip --no-cache-dir install \
 	openpyxl \
 	pytest \
 	typing \
+	tfdebugger \
 	&& \
 	python -m ipykernel.kernelspec
 
@@ -45,6 +46,11 @@ COPY keras.json /root/.keras
 # https://github.com/ipython/ipython/issues/7062
 # We just add a little wrapper script.
 COPY run_jupyter.sh /
+
+# Use the tfdebugger_setup.py script to
+# add the tfdebugger notebook extension
+# as per: https://github.com/ericjang/tdb
+COPY tfdebugger_setup.py /
 
 ENV TENSORFLOW_VERSION 0.11.0rc0
 
@@ -60,3 +66,4 @@ EXPOSE 8888
 WORKDIR "/notebooks"
 
 CMD ["/run_jupyter.sh"]
+CMD ["python /tfdebugger_setup.py"]
