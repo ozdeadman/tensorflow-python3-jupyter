@@ -26,6 +26,7 @@ RUN pip --no-cache-dir install \
 	scipy \
 	pandas \
 	scikit-learn \
+	scikit-image \
 	Pillow \
 	jupyter \
 	matplotlib \
@@ -33,6 +34,7 @@ RUN pip --no-cache-dir install \
 	statsmodels \
 	bs4 \
 	openpyxl \
+	xlrd \
 	pytest \
 	typing \
 	tfdebugger \
