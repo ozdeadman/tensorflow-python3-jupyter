@@ -42,7 +42,8 @@ RUN pip --no-cache-dir install \
 	python -m ipykernel.kernelspec
 
 COPY jupyter_notebook_config.py /root/.jupyter/
-COPY keras.json /root/.keras
+RUN mkdir /root/.keras
+COPY keras.json /root/.keras/
 
 # Jupyter has issues with being run directly:
 # https://github.com/ipython/ipython/issues/7062
