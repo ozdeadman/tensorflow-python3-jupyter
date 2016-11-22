@@ -35,6 +35,7 @@ RUN pip --no-cache-dir install \
 	bs4 \
 	openpyxl \
 	xlrd \
+	h5py \
 	pytest \
 	typing \
 	tfdebugger \

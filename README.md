@@ -7,14 +7,15 @@ Included packages (excluding dependencies):
 * ipykernel
 * jupyter
 * matplotlib
-* scipy
-* scikit-learn
+* numpy, scipy
+* scikit-learn, scikit-image
 * pandas
 * keras
 * Pillow
 * statsmodels
 * bs4
-* openpyxl
+* openpyxl, xlrd
+* h5py
 * pytest
 * typing
 * tfdebugger (uses tfdebugger_setup.py)
