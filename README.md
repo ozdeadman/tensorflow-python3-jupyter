@@ -3,29 +3,7 @@ Tensorflow Python3 Jupyter _et al._
 
 Docker container with Python (3.5) version of Tensorflow accompanied by Jupyter and a number of useful packages. TensorFlow version is currently 0.11.0rc0. Includes TDB for breakpoints and real time visualisation of the data flowing through TensorFlows computational graph.
 
-Included packages (excluding dependencies):
-* ipykernel
-* jupyter
-* matplotlib
-* scipy
-* scikit-learn
-* pandas
-* keras
-* Pillow
-* statsmodels
-* bs4
-* openpyxl
-* pytest
-* typing
-* tfdebugger (uses tfdebugger_setup.py)
-
-Also includes support for exporting Jupyter notebooks as PDFs (via nbconvert).
-
-Included packages via apt-get:
-* texlive
-* texlive-latex-extra
-* pandoc
-* xzdec
+Also includes OpenCV 3.0.0 and support for exporting Jupyter notebooks as PDFs (via nbconvert and TeX).
 
 Usage
 -----
@@ -43,3 +21,5 @@ Credits
 [yamatsuka-hiroto] (https://github.com/yamatsuka-hiroto/tensorflow-python3-jupyter) - for the addition of Keras
 
 [ericjang] (https://github.com/ericjang/tdb) - for the TensorDebugger (TDB), a visual debugger for TensorFlow
+
+[janza] (https://github.com/janza/docker-python3-opencv) - for the addition of OpenCV
